@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana - Portfolio</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/011ac8f38f.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin: 0 20px 10px 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0 0 10px 0;
+        }
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            color: #343a40;
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .resume-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .resume-link:hover {
+            text-decoration: underline;
+        }
+        .connect-icons {
+            font-size: 2em;
+            margin: 0 10px;
+            color: #343a40;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .hobbies-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .hobbies-list li {
+            text-align: center;
+        }
+        footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .resume-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .resume-options a {
+            margin: 5px;
+        }
+        .project-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Archana Sonwane</h1>
+            <p>Aspiring DevOps & Data Engineer</p>
+        </div>
+        <img src="photo2.jpg" alt="Your Photo" class="img-fluid profile-photo">
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself. Highlight your skills, experiences, and passion for your work.</p>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Choose an option to interact with your resume:</p>
+            <div class="resume-options">
+                <a href="your-resume.pdf" target="_blank" class="btn btn-primary">View</a>
+                <a href="your-resume.pdf" download class="btn btn-secondary">Download</a>
+                <button onclick="shareResume()" class="btn btn-success">Share</button>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="project-image1.jpg" class="card-img-top" alt="Project Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Library Management</h5>
+                            <p class="card-text">Description of the project. Include your role, technologies used, and outcomes.</p>
+                            <a href="https://gitlab.com/gemini_123/library-management-java" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="project-image2.jpg" class="card-img-top" alt="Project Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">Description of the project. Include your role, technologies used, and outcomes.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="project-image3.jpg" class="card-img-top" alt="Project Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">Description of the project. Include your role, technologies used, and outcomes.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Volunteering</h2>
+            <ul class="hobbies-list">
+                <!-- Add your hobbies and volunteering activities here -->
+            </ul>
+        </section>
+
+        <section id="connect">
+                          <h2>Contact Me</h2>
+                <p>Have an opportunity or just want to say hi? Reach out to me using the form below.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+        </section>
+
+
+        <section id="connect">
+            <h2>Connect</h2>
+            <p>Connect with me on social media:</p>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="connect-icons"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/yourusername" target="_blank" class="connect-icons"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" class="connect-icons"><i class="fab fa-twitter"></i></a>
+            <!-- Add more social media icons as needed -->
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2024 Your Name
+    </footer>
+
+    <!-- Bootstrap JS for responsive features -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Function to simulate sharing (replace with your actual sharing mechanism) -->
+    <script>
+        function shareResume() {
+            alert("Share your resume functionality goes here!");
+        }
+    </script>
+</body>
+</html>
