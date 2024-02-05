@@ -175,7 +175,7 @@
         <section id="connect">
                           <h2>Contact Me</h2>
                 <p>Have an opportunity or just want to say hi? Reach out to me using the form below.</p>
-                <form id="contactForm" action="contact.php" method="post">
+                <form>
                     <div class="form-group">
                         <label for="fullName">Full Name</label>
                         <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
@@ -188,7 +188,7 @@
                         <label for="message">Your Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" onclick="showConfirmation()>Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
 
         </section>
@@ -216,8 +216,8 @@
 
     <!-- Function to simulate sharing (replace with your actual sharing mechanism) -->
     <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-<script type="IN/Share" data-url="https://www.linkedin.com"></script>
-<script type="text/javascript" src="https://statics.teams.cdn.office.net/sdk/v1.11.0/js/MicrosoftTeams.min.js"></script>
+
+
 
 <script>
     function showShareOptions() {
@@ -228,12 +228,9 @@
     function shareLinkedIn() {
         // Trigger LinkedIn Share Plugin
         IN.UI.Share().params({
-            url: 'https://da-gemini.github.io/portfolio/documents/resume.pdf'
+            url: 'https://www.linkedin.com'
         }).place();
     }
-    function showConfirmation() {
-            alert("Your message has been sent. Thank you!");
-        }
 
 </script>
 </body>
