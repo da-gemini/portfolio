@@ -175,7 +175,7 @@
         <section id="connect">
                           <h2>Contact Me</h2>
                 <p>Have an opportunity or just want to say hi? Reach out to me using the form below.</p>
-                <form>
+                <form id="contactForm" action="contact.php" method="post">
                     <div class="form-group">
                         <label for="fullName">Full Name</label>
                         <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
@@ -188,7 +188,7 @@
                         <label for="message">Your Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" onclick="showConfirmation()>Send Message</button>
                 </form>
 
         </section>
@@ -231,6 +231,9 @@
             url: 'https://da-gemini.github.io/portfolio/documents/resume.pdf'
         }).place();
     }
+    function showConfirmation() {
+            alert("Your message has been sent. Thank you!");
+        }
 
 </script>
 </body>
