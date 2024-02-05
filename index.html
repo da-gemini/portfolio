@@ -131,8 +131,6 @@
                 <button onclick="showShareOptions()" class="btn btn-secondary">Share</button>
                 <div id="share-options" style="display: none;">
                     <button onclick="shareLinkedIn()" class="share-option">Share via LinkedIn</button>
-                    
-                    <!-- <button onclick="shareOutlook()" class="share-option">Share via Outlook</button> -->
                 </div>
             </div>
           </section>
@@ -188,7 +186,7 @@
                         <label for="message">Your Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" onclick="showConfirmation()>Send Message</button>
                 </form>
 
         </section>
@@ -233,5 +231,10 @@
     }
 
 </script>
+    <script>
+        function showConfirmation() {
+            alert("Your message has been sent. Thank you!");
+        }
+    </script>
 </body>
 </html>
