@@ -1,237 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archana - Portfolio</title>
-    <!-- Bootstrap CSS for styling -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/011ac8f38f.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts - Poppins -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-        
-        header, footer {
-            background-color: #343a40;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        header h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 2.5em;
-            margin: 0 20px 10px 0;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 0 0 10px 0;
-        }
-        .container {
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        section h2 {
-            color: #343a40;
-            border-bottom: 2px solid #343a40;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .card {
-            transition: transform 0.2s ease-in-out;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .resume-link {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .resume-link:hover {
-            text-decoration: underline;
-        }
-        .connect-icons {
-            font-size: 2em;
-            margin: 0 10px;
-            color: #343a40;
-        }
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-left: 20px;
-            margin-bottom: 8px;
-            margin-top: 8px;
-        }
-        .hobbies-list {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .hobbies-list li {
-            text-align: center;
-        }
-        /* footer {
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        } */
-        .resume-options {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10px;
-        }
-        .resume-options a {
-            margin: 5px;
-        }
-        .project-card {
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Archana - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1>Archana Sonawane</h1>
-            <p>Aspiring DevOps & Data Engineer</p>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Archana Sonawane</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-        <img src="images/photo.jpg" alt="Your Photo" class="img-fluid profile-photo">
-    </header>
+      </div>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello World! I am a recent Master of Digital Transformation graduate with a passion for perpetual learning and a vision to contribute to the ever-evolving landscape of Industry 4.0.</p>
-            <p>I believe in being "everything at once"!</p>
-        </section>
-
-         <section id="resume">
-            <h2>Resume</h2>
-            <p>Choose an option to interact with my resume:</p>
-            <div class="resume-options">
-                <a href="documents/resume.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-eye"></i> View</a>
-                <a href="documents/resume.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
-                <button onclick="showShareOptions()" class="btn btn-secondary"><i class="fas fa-share"></i> Share</button>
-                <div id="share-options" style="display: none;">
-                    <button onclick="shareLinkedIn()" class="share-option"><i class="fab fa-linkedin"></i> Share via LinkedIn</button>
-                </div>
-            </div>
-          </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/librarymngmt.jpg" class="card-img-top" alt="Project Image 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Library Management</h5>
-                            <p class="card-text">Description of the project. Include your role, technologies used, and outcomes.</p>
-                            <a href="https://gitlab.com/gemini_123/library-management-java" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/project2.jpg" class="card-img-top" alt="Project Image 2">
-                        <div class="card-body">
-                            <h5 class="card-title">AWS CI/CD Implementation </h5>
-                            <p class="card-text">Implemented CI CD pipeline on cloud using AWS managed sevices .</p>
-                            <a href="#" class="btn btn-primary">Coming Soon</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="images/project3.jpg" class="card-img-top" alt="Project Image 3">
-                        <div class="card-body">
-                            <h5 class="card-title">AWS Cloud migration </h5>
-                            <p class="card-text">Migration of local application to AWS using lift & shift strategy.</p>
-                            <a href="#" class="btn btn-primary">Coming Soon</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="connect">
-                          <h2>Contact Me</h2>
-                <p>Have an opportunity or just want to say hi? Reach out to me using the form below.</p>
-                <form action="contact.php" method="POST">
-                    <div class="form-group">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" class="form-control" id="fullName" placeholder="Your Full Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" onclick="showConfirmation()">Send Message</button>
-                </form>
-
-        </section>
-
-        <section id="connect">
-            <h2>Connect</h2>
-            <p>Connect with me on social media:</p>
-            <a href="https://www.linkedin.com/in/archana93/" target="_blank" class="connect-icons"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/da-gemini" target="_blank" class="connect-icons"><i class="fab fa-github"></i></a>
-        </section>
-
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
 
-    <!-- <footer>
-        &copy; 2024 Archana
-    </footer> -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Archana Sonawane</h1>
+      <p>I'm <span class="typed" data-typed-items="Engineer, Dreamer, Reader"></span></p>
+    </div>
+  </section><!-- End Hero -->
 
-    <!-- Bootstrap JS for responsive features -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <main id="main">
 
-    <!-- Function to simulate sharing (replace with your actual sharing mechanism) -->
-    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Hello World! I am a recent Master of Digital Transformation graduate with a passion for perpetual learning and a vision to contribute to the ever-evolving landscape of Industry 4.0.</p>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Data &amp; Devops Engineer</h3>
+            <p class="fst-italic">
+              Transforming chaos into stremlined systems.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                 
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ontario, Canada</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>arch.jovial@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1(343)-553-0015</span></li>
+                </ul>
+              <!-- </div>
+              <div class="col-lg-6">
+                <ul> -->
+                  
+              </div>
+            </div>
+            <p>
+              Orchestrating the systems from the past six years. Armed with a master's degree, this tech enthusiast is passionate about dynamic world of Data and DevOps .
+            </p>
+          </div>
+        </div>
 
-<script>
-    function showShareOptions() {
-        const shareOptions = document.getElementById('share-options');
-        shareOptions.style.display = 'block';
-    }
+      </div>
+    </section><!-- End About Section --> 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <!-- &copy; Copyright <strong><span>iPortfolio</span></strong> -->
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
 
-    function shareLinkedIn() {
-        // Trigger LinkedIn Share Plugin
-        IN.UI.Share().params({
-            url: 'https://da-gemini.github.io/portfolio/documents/resume.pdf'
-        }).place();
-    }
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-</script>
-    <script>
-        function showConfirmation() {
-            alert("Your message has been sent. Thank you!");
-        }
-    </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
